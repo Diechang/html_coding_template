@@ -58,7 +58,7 @@ table {
 }
 
 :root {
-  --font-size: $font-size;
+  --font-size: 14px;
   --color-text: #333;
 }
 

@@ -4,6 +4,7 @@
   "scripts": {
     "server": "http-server",
     "s": "npm run server",
+    "sass": "sass",
     "sass-watch": "sass --watch scss:css --style=expanded --no-source-map",
     "dev": "run-p server sass-watch"
   },
