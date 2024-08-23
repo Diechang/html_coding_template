@@ -3,11 +3,10 @@
   "version": "0.0.1",
   "scripts": {
     "server": "http-server dist -o",
-    "s": "npm run server",
     "sass": "sass",
     "sass-watch": "sass --watch scss:dist/css --style=expanded --no-source-map",
-    "pug": "pug pug -o dist -P",
-    "pug-watch": "pug -w pug -o dist -P",
+    "pug": "pug pug/pages -o dist -P",
+    "pug-watch": "pug -w pug/pages -o dist -P",
     "dev": "run-p server sass-watch pug-watch"
   },
   "dependencies": {

@@ -1,4 +1,4 @@
-extends layouts/_default.pug
+extends ../layouts/default.pug
 
 block vars
   - var title = 'Home'
@@ -8,6 +8,7 @@ block header
 
 block main
   | Main contents
+  include ../components/component
 
 block footer
   | Footer contents
