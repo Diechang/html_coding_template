@@ -2,11 +2,13 @@
   "name": "html_coding_template",
   "version": "0.0.1",
   "scripts": {
-    "server": "http-server",
+    "server": "http-server dist -o",
     "s": "npm run server",
     "sass": "sass",
-    "sass-watch": "sass --watch scss:css --style=expanded --no-source-map",
-    "dev": "run-p server sass-watch"
+    "sass-watch": "sass --watch scss:dist/css --style=expanded --no-source-map",
+    "pug": "pug pug -o dist -P",
+    "pug-watch": "pug -w pug -o dist -P",
+    "dev": "run-p server sass-watch pug-watch"
   },
   "dependencies": {
     "reset-css": "^5.0.2",
@@ -14,6 +16,8 @@
   },
   "devDependencies": {
     "http-server": "^14.1.1",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "pug": "^3.0.3",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
