@@ -2,7 +2,7 @@
   "name": "html_coding_template",
   "version": "0.0.1",
   "scripts": {
-    "server": "http-server dist -o",
+    "server": "http-server dist -c-1 -o",
     "sass": "sass",
     "sass-watch": "sass --watch scss:dist/css --style=expanded --no-source-map",
     "pug": "pug pug/pages -o dist -P",
