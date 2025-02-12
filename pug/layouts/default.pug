@@ -1,5 +1,7 @@
 block vars
   - var title = 'Layout'
+  - var bodyClass = null
+  - var mainClass = null
 
 doctype html
 head
@@ -44,20 +46,20 @@ head
   // JS Libraries
   script(src='https://code.jquery.com/jquery-1.12.4.min.js')
 
+body(class=bodyClass)
+  // Header//
+  header.header
+    block header
 
-// Header//
-header
-  block header
+  // Main//
+  main(class=mainClass)
+    block main
 
-// Main//
-main
-  block main
+  // Footer//
+  footer.footer
+    block footer
 
-// Footer//
-footer
-  block footer
-
-// Javascript Modules
-script(src='/js/modules/module.js', type='module')
-// Javascript
-script(src='/js/script.js', type='module')
+  // Javascript Modules
+  script(src='/js/modules/module.js', type='module')
+  // Javascript
+  script(src='/js/script.js', type='module')
