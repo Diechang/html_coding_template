@@ -1,2 +1,34 @@
 // _vars.scsa
-$font-size: 14px;
+
+// colors
+$bg-white: white;
+
+$color-white: white;
+$color-black: black;
+
+$color-primary: blue;
+$color-secondary: green;
+
+$color-text: black;
+
+$color-border: gray;
+
+// sizes
+$body-width-pc: 1440px;
+
+$spacer-base: 8px;
+$spacer-s: $spacer-base * .5;
+$spacer-m: $spacer-base * 1.5;
+$spacer-l: $spacer-base * 2;
+$spacer-3: $spacer-base * 3;
+$spacer-4: $spacer-base * 4;
+$spacer-5: $spacer-base * 5;
+$spacer-10: $spacer-base * 10;
+
+// texts
+$font-size-base: 14px;
+$font-size-s: 12px;
+$font-size-m: 16px;
+$font-size-l: 20px;
+$font-size-xl: 24px;
+$font-size-xxl: 28px;

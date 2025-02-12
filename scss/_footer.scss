@@ -1,0 +1,10 @@
+@use 'forwards' as f;
+
+// for footer
+.footer {
+
+  // pc
+  @include f.media_pc {
+  }
+}
+

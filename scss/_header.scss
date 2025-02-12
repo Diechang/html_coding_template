@@ -1,0 +1,9 @@
+@use 'forwards' as f;
+
+// for header
+.header {
+
+  // pc
+  @include f.media_pc {
+  }
+}

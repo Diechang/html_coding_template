@@ -1,0 +1,19 @@
+@use 'vars';
+
+// media sp
+@mixin media_sp {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+// media pc
+@mixin media_pc {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin min_width_pc {
+  min-width: vars.$body-width-pc;
+}
