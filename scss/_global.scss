@@ -28,6 +28,11 @@ body {
   font-size: var(--font-size);
 }
 
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
 p {
   line-height: 1.8;
 }
