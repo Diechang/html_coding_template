@@ -9,13 +9,21 @@
     "pug-watch": "pug -w pug/pages -o dist -P",
     "tsc": "tsc",
     "tsc-watch": "tsc -w -p tsconfig.json",
-    "dev": "run-p server sass-watch pug-watch tsc-watch"
+    "imagemin": "imagemin img/* --out-dir=dist/img",
+    "imagemin-watch": "chokidar 'img/**/*' -c 'npm run imagemin' --initial",
+    "dev": "run-p server sass-watch pug-watch tsc-watch imagemin-watch"
   },
   "dependencies": {
     "reset-css": "^5.0.2"
   },
   "devDependencies": {
+    "chokidar-cli": "^3.0.0",
     "http-server": "^14.1.1",
+    "imagemin-cli": "^8.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-svgo": "^11.0.1",
+    "imagemin-webp": "^8.0.0",
     "npm-run-all": "^4.1.5",
     "pug": "^3.0.3",
     "pug-cli": "^1.0.0-alpha6",
